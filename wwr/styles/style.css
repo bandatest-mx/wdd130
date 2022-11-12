@@ -233,7 +233,12 @@ nav {
     grid-template-columns: repeat(10, 1fr);
 }
 
-.card-img, .mountains {
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.card-img, .mountains, .faq-img {
     width: 100%;
 }
 
@@ -242,8 +247,28 @@ nav {
     grid-row: 2/3;
 }
 
+.faq-card {
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
 .camping-card {
     grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.title-card {
+    grid-column: 7/10;
+    grid-row: 2/3;
+}
+
+.question-card {
+    grid-column: 7/10;
+    grid-row: 3/5;
+}
+
+.title-card {
+    grid-column: 7/10;
     grid-row: 2/3;
 }
 
