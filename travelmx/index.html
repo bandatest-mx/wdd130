@@ -145,21 +145,21 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-  <h3 class="mx-text">From the beach to the mountains, from the desert to the jungle, from the archaeological zone to the vibrant cities, from sweet to spicy flavors, from relaxing to the happy of its parties, Mexico has everything that tourists are looking for, which is well received by the warmth of its people. Mexico has 32 states to fall in love with.</h3>
+  <h5 class="mx-text">From the beach to the mountains, from the desert to the jungle, from the archaeological zone to the vibrant cities, from sweet to spicy flavors, from relaxing to the happy of its parties, Mexico has everything that tourists are looking for, which is well received by the warmth of its people. Mexico has 32 states to fall in love with.</h5>
 
     </div>
     <main class="home-grid">
         <section class="rivers-card">
             <img class="card-img" src="images/pexels-isai-matus-14087289.jpg" alt="Durango">
-            <h2>Durango</h2>
+            <h4>Durango</h4>
         </section>
         <section class="camping-card">
             <img class="card-img" src="images/pexels-isai-matus-14288045.jpg" alt="Dia de Muertos">
-            <h2>Dia de Muertos</h2>
+            <h4>Dia de Muertos</h4>
         </section>
         <section class="rapids-card">
             <img class="card-img" src="images/pexels-jorge-medina-12331696.jpg" alt="Zacatecas">
-            <h2>Zacatecas</h2>
+            <h4>Zacatecas</h4>
         </section>
     </main>
     <footer>
@@ -195,17 +195,15 @@
         function showSlides(n) {
           let i;
           let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
+          
           if (n > slides.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
+          
           slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+          
         }
         </script>
 </body>
